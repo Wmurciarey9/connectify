@@ -1,0 +1,56 @@
+.box {
+  margin: 20px;
+
+  .contentBox {
+    display: flex;
+    margin-top: 20px;
+    .left {
+      margin-right: 20px;
+      img {
+        border-radius: 15px;
+        width: 250px;
+        height: 150px;
+        object-fit: cover;
+      }
+    }
+    .right {
+      .eventDate {
+        margin-top: 10px;
+        font-weight: 700;
+        color: rgb(130, 113, 14);
+        margin-bottom: 15px;
+      }
+      .title {
+        font-weight: 800;
+        font-size: 19px;
+        margin-bottom: 10px;
+      }
+      .location {
+        color: rgb(118, 117, 117);
+        margin-bottom: 40px;
+      }
+      .capacity {
+        color: rgb(118, 117, 117);
+        margin-bottom: 10px;
+        span {
+          color: red;
+        }
+      }
+    }
+    .icons {
+      display: flex;
+      position: absolute;
+
+      right: 50px;
+      padding: 20px;
+      .icon {
+        margin-right: 10px;
+        font-size: 30px;
+      }
+    }
+  }
+  hr.solidLight {
+    margin-top: 40px;
+    border-top: 2px solid rgb(207, 203, 203);
+  }
+}
