@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.scss";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -21,38 +22,40 @@ export const Home = () => {
           />
         </div>
       </div>
-      <div className="top-section-bottom">
-        <div className="activity">
-          <img
-            src="https://secure.meetupstatic.com/next/images/indexPage/category1.webp?w=640"
-            alt=""
-          />
-          <div className="icon">
-            <a href="#">Make new friends</a>
-            <ArrowForwardOutlinedIcon />
+      <Link to="/findEvents">
+        <div className="top-section-bottom">
+          <div className="activity">
+            <img
+              src="https://secure.meetupstatic.com/next/images/indexPage/category1.webp?w=640"
+              alt=""
+            />
+            <div className="icon">
+              <a href="#">Make new friends</a>
+              <ArrowForwardOutlinedIcon />
+            </div>
+          </div>
+          <div className="activity">
+            <img
+              src="https://secure.meetupstatic.com/next/images/indexPage/category2.webp?w=640"
+              alt=""
+            />
+            <div className="icon">
+              <a href="#">Explore the outdoors</a>
+              <ArrowForwardOutlinedIcon />
+            </div>
+          </div>
+          <div className="activity">
+            <img
+              src="https://secure.meetupstatic.com/next/images/indexPage/category3.webp?w=640"
+              alt=""
+            />
+            <div className="icon">
+              <a href="#">Connect over friends</a>
+              <ArrowForwardOutlinedIcon />
+            </div>
           </div>
         </div>
-        <div className="activity">
-          <img
-            src="https://secure.meetupstatic.com/next/images/indexPage/category2.webp?w=640"
-            alt=""
-          />
-          <div className="icon">
-            <a href="#">Explore the outdoors</a>
-            <ArrowForwardOutlinedIcon />
-          </div>
-        </div>
-        <div className="activity">
-          <img
-            src="https://secure.meetupstatic.com/next/images/indexPage/category3.webp?w=640"
-            alt=""
-          />
-          <div className="icon">
-            <a href="#">Connect over friends</a>
-            <ArrowForwardOutlinedIcon />
-          </div>
-        </div>
-      </div>
+      </Link>
       <div className="top-section-filters">
         <a href="#" className="filters">
           Boost your career
@@ -61,20 +64,98 @@ export const Home = () => {
           Find your Zen
         </a>
         <a href="#" className="filters">
-          Any day
+          Get Moving
         </a>
         <a href="#" className="filters">
-          Any day
+          Share language + culture
         </a>
         <a href="#" className="filters">
-          Any day
+          Read with friends
         </a>
         <a href="#" className="filters">
-          Any day
+          Write together
         </a>
         <a href="#" className="filters">
-          Any day
+          Hone your craft
         </a>
+      </div>
+      <div className="howItWorks">
+        <div className="hiwTop">
+          <h1>How Connectify Works</h1>
+          <p>
+            Meet new people who share your interests through online and
+            in-person events. It’s free to create an account.
+          </p>
+        </div>
+        <div className="hiwBottom">
+          <div className="hiwSection">
+            <img
+              src="https://secure.meetupstatic.com/next/images/shared/handsUp.svg?w=384"
+              alt=""
+            />
+            <h2>Join a group</h2>
+            <p>
+              Do what you love, meet others who love it, find your community.
+              The rest is history!
+            </p>
+          </div>
+          <div className="hiwSection">
+            <img
+              src="https://secure.meetupstatic.com/next/images/shared/ticket.svg?w=384"
+              alt=""
+            />
+            <h2>Find an event</h2>
+            <p>
+              Events are happening on just about any topic you can think of,
+              from online gaming and photography to yoga and hiking.
+            </p>
+          </div>
+          <div className="hiwSection">
+            <img
+              src="https://secure.meetupstatic.com/next/images/shared/joinGroup.svg?w=384"
+              alt=""
+            />
+            <h2>Start a group</h2>
+            <p>
+              You don’t have to be an expert to gather people together and
+              explore shared interests.
+            </p>
+          </div>
+        </div>
+        <button>Join Meetup</button>
+      </div>
+      <div className="download-section">
+        <div className="ds-side">
+          <img
+            src="https://secure.meetupstatic.com/next/images/apps/ScreenIos.webp?w=640"
+            alt=""
+          />
+        </div>
+        <div className="ds-middle">
+          <div className="icon">
+            <img
+              src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/meetup-icon.png"
+              alt=""
+            />
+          </div>
+          <p>Stay connected. Download the app.</p>
+          <div className="dw-icons">
+            <img
+              src="https://secure.meetupstatic.com/next/images/app-download/ios/download_en-US.svg?w=2048"
+              alt=""
+            />
+            <img
+              src="https://secure.meetupstatic.com/next/images/app-download/android/download_en-US.svg?w=2048"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="ds-side">
+          <img
+            src="https://secure.meetupstatic.com/next/images/apps/ScreenAndroid.webp?w=640"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

@@ -9,12 +9,20 @@ import Person2OutlinedIcon from "@mui/icons-material/Person2Outlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import ExitToAppOutlinedIcon from "@mui/icons-material/ExitToAppOutlined";
 
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css"; // optional
+import { Link } from "react-router-dom";
+
 export const Navbar = () => {
   return (
     <div className="navbar">
       <div className="container">
         <div className="left">
-          <img className="logoImg" src={TransparentLogoV2} alt="" />
+          <Link to={`/`}>
+            <Tippy content="Home">
+              <img className="logoImg" src={TransparentLogoV2} alt="" />
+            </Tippy>
+          </Link>
           <div className="searchContainer">
             <input type="text" placeholder="Search events" />
             <input type="text" placeholder="Search Location" />
